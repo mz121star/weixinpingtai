@@ -98,10 +98,9 @@ class App {
     static public function exec() {
         if(!preg_match('/^[A-Za-z](\w)*$/',MODULE_NAME)){ // 安全检测
             $module  =  false;
-            echo 111;exit;
         }else{
             //创建Action控制器实例
-            $group   =  defined('GROUP_NAME') ? GROUP_NAME.'/' : '';echo 222;exit;
+            $group   =  defined('GROUP_NAME') ? GROUP_NAME.'/' : '';
             $module  =  A($group.MODULE_NAME);
              
         }
@@ -126,7 +125,6 @@ class App {
                 }
             }
         }
-        echo 1123;exit;
         // 获取当前操作名 支持动态路由
         $action = C('ACTION_NAME')?C('ACTION_NAME'):ACTION_NAME;
         C('TEMPLATE_NAME',THEME_PATH.MODULE_NAME.(defined('GROUP_NAME')?C('TMPL_FILE_DEPR'):'/').$action.C('TMPL_TEMPLATE_SUFFIX'));
