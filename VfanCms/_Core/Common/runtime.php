@@ -234,12 +234,9 @@ function build_dir_secure($dirs='') {
         }
     }
 }
-echo 1111;
 // 加载运行时所需文件
 load_runtime_file();
 // 记录加载文件时间
 G('loadTime');
 // 执行入口
-echo 2222;
-exit;
 Think::Start();
