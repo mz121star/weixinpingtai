@@ -101,9 +101,9 @@ class App {
             echo 111;exit;
         }else{
             //创建Action控制器实例
-            $group   =  defined('GROUP_NAME') ? GROUP_NAME.'/' : '';
+            $group   =  defined('GROUP_NAME') ? GROUP_NAME.'/' : '';echo 222;exit;
             $module  =  A($group.MODULE_NAME);
-             echo 222;exit;
+             
         }
 
         if(!$module) {
