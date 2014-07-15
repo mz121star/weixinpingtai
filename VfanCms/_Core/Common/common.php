@@ -167,14 +167,19 @@ function import($class, $baseUrl = '', $ext='.class.php') {
             $baseUrl = APP_PATH . '../' . $class_strut[0] . '/'.basename(LIB_PATH).'/';
         }
     }
-    exit;
+    
     if (substr($baseUrl, -1) != '/')
         $baseUrl    .= '/';
     $classfile       = $baseUrl . $class . $ext;
+    echo "<br>";
+	echo $classfile;
+	echo "<br>";
+	echo $basename($class);exit;
     if (!class_exists(basename($class),false)) {
         // 如果类不存在 则导入类库文件
         return require_cache($classfile);
     }
+    
 }
 
 /**
