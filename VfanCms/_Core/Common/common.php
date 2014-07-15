@@ -107,7 +107,7 @@ function require_cache($filename) {
             $_importFiles[$filename] = false;
         }
     }
-     $_importFiles[$filename];echo 2342;exit;
+    return $_importFiles[$filename];
 }
 
 /**
