@@ -99,6 +99,9 @@ function parse_name($name, $type=0) {
  */
 function require_cache($filename) {
     static $_importFiles = array();
+    echo 'aaaaaaaaaaaaaaa';
+    echo $filename;
+    exit;
     if (!isset($_importFiles[$filename])) {
         if (file_exists_case($filename)) {
             require $filename;
@@ -174,7 +177,7 @@ function import($class, $baseUrl = '', $ext='.class.php') {
     echo "<br>";
 	echo $classfile;
 	echo "<br>";
-	echo $basename($class);exit;
+	echo basename($class);
     if (!class_exists(basename($class),false)) {
         // 如果类不存在 则导入类库文件
         return require_cache($classfile);
