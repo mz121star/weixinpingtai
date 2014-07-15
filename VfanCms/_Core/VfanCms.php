@@ -27,5 +27,6 @@ if(!APP_DEBUG && is_file(RUNTIME_FILE)) {
     // 系统目录定义
     defined('THINK_PATH') or define('THINK_PATH', dirname(__FILE__).'/');
     // 加载运行时文件
+    echo 111;exit;
     require THINK_PATH.'Common/runtime.php';
 }
