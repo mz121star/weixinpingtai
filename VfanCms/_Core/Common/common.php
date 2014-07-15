@@ -134,12 +134,18 @@ function file_exists_case($filename) {
  * @return boolen
  */
 function import($class, $baseUrl = '', $ext='.class.php') {
+	echo $class;
+	echo "<br>";
+	echo $baseUrl;
+	echo "<br>";
+	echo $ext;
     static $_file = array();
     $class = str_replace(array('.', '#'), array('/', '.'), $class);
     if ('' === $baseUrl && false === strpos($class, '/')) {
         // 检查别名导入
         return alias_import($class);
     }
+    exit;
     if (isset($_file[$class . $baseUrl]))
         return true;
     else
@@ -310,10 +316,7 @@ function A($name,$layer='') {
         $name   =  '@/'.$layer.'/'.$name;
     }
     if(isset($_action[$name]))  return $_action[$name];
-    echo $name;
-	echo "<br>";
-	echo $layer;
-    import($name.$layer);exit;
+    import($name.$layer);
     $class      =   basename($name.$layer);
     if(class_exists($class,false)) {
         $action             = new $class();
