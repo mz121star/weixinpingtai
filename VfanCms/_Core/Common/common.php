@@ -107,7 +107,7 @@ function require_cache($filename) {
             $_importFiles[$filename] = false;
         }
     }
-    return $_importFiles[$filename];
+     $_importFiles[$filename];echo 2342;exit;
 }
 
 /**
@@ -168,7 +168,7 @@ function import($class, $baseUrl = '', $ext='.class.php') {
     $classfile       = $baseUrl . $class . $ext;
     if (!class_exists(basename($class),false)) {
         // 如果类不存在 则导入类库文件
-         require_cache($classfile);echo 1212;exit;
+        return require_cache($classfile);
     }
     
 }
