@@ -101,13 +101,12 @@ function require_cache($filename) {
     static $_importFiles = array();
     if (!isset($_importFiles[$filename])) {
         if (file_exists_case($filename)) {
-        	
             require $filename;
             $_importFiles[$filename] = true;
         } else {
             $_importFiles[$filename] = false;
         }
-    }echo 343;exit;
+    }
     return $_importFiles[$filename];
 }
 
@@ -169,7 +168,7 @@ function import($class, $baseUrl = '', $ext='.class.php') {
     $classfile       = $baseUrl . $class . $ext;
     if (!class_exists(basename($class),false)) {
         // 如果类不存在 则导入类库文件
-        return require_cache($classfile);
+         require_cache($classfile);echo 1212;exit;
     }
     
 }
