@@ -301,9 +301,7 @@ function M($name='', $tablePrefix='',$connection='') {
  * @return Action|false
  */
 function A($name,$layer='') {
-	echo $name;
-	echo "<br>";
-	echo $layer;
+	
     static $_action = array();
     $layer      =   $layer?$layer:C('DEFAULT_C_LAYER');
     if(strpos($name,'://')) {// 指定项目
@@ -312,8 +310,10 @@ function A($name,$layer='') {
         $name   =  '@/'.$layer.'/'.$name;
     }
     if(isset($_action[$name]))  return $_action[$name];
-    exit;
-    import($name.$layer);
+    echo $name;
+	echo "<br>";
+	echo $layer;
+    import($name.$layer);exit;
     $class      =   basename($name.$layer);
     if(class_exists($class,false)) {
         $action             = new $class();
