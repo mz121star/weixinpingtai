@@ -99,11 +99,9 @@ function parse_name($name, $type=0) {
  */
 function require_cache($filename) {
     static $_importFiles = array();
-    echo 'aaaaaaaaaaaaaaa';
-    echo $filename;
-    exit;
     if (!isset($_importFiles[$filename])) {
         if (file_exists_case($filename)) {
+        	echo 11;exit;
             require $filename;
             $_importFiles[$filename] = true;
         } else {
@@ -137,11 +135,6 @@ function file_exists_case($filename) {
  * @return boolen
  */
 function import($class, $baseUrl = '', $ext='.class.php') {
-	echo $class;
-	echo "<br>";
-	echo $baseUrl;
-	echo "<br>";
-	echo $ext;
     static $_file = array();
     $class = str_replace(array('.', '#'), array('/', '.'), $class);
     if ('' === $baseUrl && false === strpos($class, '/')) {
@@ -174,10 +167,6 @@ function import($class, $baseUrl = '', $ext='.class.php') {
     if (substr($baseUrl, -1) != '/')
         $baseUrl    .= '/';
     $classfile       = $baseUrl . $class . $ext;
-    echo "<br>";
-	echo $classfile;
-	echo "<br>";
-	echo basename($class);
     if (!class_exists(basename($class),false)) {
         // 如果类不存在 则导入类库文件
         return require_cache($classfile);
