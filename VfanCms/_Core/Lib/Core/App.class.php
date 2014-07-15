@@ -205,9 +205,7 @@ class App {
         session(C('SESSION_OPTIONS'));
         // 记录应用初始化时间
         G('initTime');
-        echo 'aaa';exit;
         App::exec();
-        echo 'bbb';
         // 项目结束标签
         tag('app_end');
         // 保存日志记录
