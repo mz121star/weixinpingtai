@@ -145,7 +145,7 @@ function import($class, $baseUrl = '', $ext='.class.php') {
         // 检查别名导入
         return alias_import($class);
     }
-    exit;
+    
     if (isset($_file[$class . $baseUrl]))
         return true;
     else
@@ -167,6 +167,7 @@ function import($class, $baseUrl = '', $ext='.class.php') {
             $baseUrl = APP_PATH . '../' . $class_strut[0] . '/'.basename(LIB_PATH).'/';
         }
     }
+    exit;
     if (substr($baseUrl, -1) != '/')
         $baseUrl    .= '/';
     $classfile       = $baseUrl . $class . $ext;
