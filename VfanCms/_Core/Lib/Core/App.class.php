@@ -98,10 +98,12 @@ class App {
     static public function exec() {
         if(!preg_match('/^[A-Za-z](\w)*$/',MODULE_NAME)){ // 安全检测
             $module  =  false;
+            echo 111;exit;
         }else{
             //创建Action控制器实例
             $group   =  defined('GROUP_NAME') ? GROUP_NAME.'/' : '';
             $module  =  A($group.MODULE_NAME);
+             echo 222;exit;
         }
 
         if(!$module) {
