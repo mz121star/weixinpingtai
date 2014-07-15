@@ -101,8 +101,8 @@ function require_cache($filename) {
     static $_importFiles = array();
     if (!isset($_importFiles[$filename])) {
         if (file_exists_case($filename)) {
-        	echo 11;exit;
-            require $filename;
+        	
+            require $filename;echo 22;exit;
             $_importFiles[$filename] = true;
         } else {
             $_importFiles[$filename] = false;
