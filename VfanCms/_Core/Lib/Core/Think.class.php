@@ -33,9 +33,11 @@ class Think {
         // 注册AUTOLOAD方法
         spl_autoload_register(array('Think', 'autoload'));
         //[RUNTIME]
+        echo 111;
         Think::buildApp();         // 预编译项目
         //[/RUNTIME]
         // 运行应用
+        echo 222;exit;
         App::run();
         return ;
     }
