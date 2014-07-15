@@ -1,0 +1,459 @@
+[ 2014-02-04T11:46:46+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.007410s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001787s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\weixin\VfanData\logs\Cache\Home\1c050765058ebc97c122cbb1ab9d8f98.php 第 22 行.
+NOTIC: [8] Undefined index:  uid D:\weixin\VfanData\logs\Cache\Home\1c050765058ebc97c122cbb1ab9d8f98.php 第 22 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.009264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020922s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.030245s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.031464s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.032637s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.033639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004801s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035129s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2014-02-04T11:47:14+08:00 ] 127.0.0.1 /index.php?g=System&m=Admin&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.005744s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001737s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant STATICS - assumed 'STATICS' D:\weixin\VfanData\logs\Cache\System\0ac5617eb2d3cba46a940e61fff06d9f.php 第 14 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.007551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015444s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.023050s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.024188s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.025588s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.026621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004826s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.027961s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001434s ]
+
+[ 2014-02-04T11:47:15+08:00 ] 127.0.0.1 /index.php?g=System&m=Admin&a=verify
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+
+[ 2014-02-04T11:47:23+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004490s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001736s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004169s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `display` = 1 ) AND ( `status` = 1 ) ORDER BY `sort` asc  [ RunTime:0.002062s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.036287s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001797s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.038193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015826s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054027s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055154s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.056331s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.057343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004578s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.058736s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001477s ]
+
+[ 2014-02-04T11:47:23+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004715s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.003476s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004707s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `display` = 2 ) AND ( `status` = 1 ) AND ( `pid` = 2 ) AND ( `level` = 2 ) ORDER BY `sort` asc  [ RunTime:0.002649s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044217s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001597s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018768s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.064716s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.065258s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.065791s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.066205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002132s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.066931s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001226s ]
+
+[ 2014-02-04T11:47:23+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=main
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.005512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005603s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004556s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.002393s ]
+SQL: SHOW COLUMNS FROM `wy_system_info` [ RunTime:0.004949s ]
+SQL: SELECT * FROM `wy_system_info` ORDER BY lastsqlupdate DESC LIMIT 1   [ RunTime:0.002571s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.174958s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001245s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant SERVER_SOFTWARE - assumed 'SERVER_SOFTWARE' D:\weixin\VfanData\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 16 行.
+NOTIC: [8] Use of undefined constant version - assumed 'version' D:\weixin\VfanData\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 19 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.176251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013416s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.189735s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.190403s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.191543s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.192000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002939s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.192793s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2014-02-04T11:47:25+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=3&level=2&title=%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006102s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 3 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.003499s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.038566s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001154s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013167s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.053046s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.053564s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.054109s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.054499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002138s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.055230s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2014-02-04T11:47:26+08:00 ] 127.0.0.1 /index.php?g=System&m=User&a=index&pid=18&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006943s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 18 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.002963s ]
+SQL: SHOW COLUMNS FROM `wy_role` [ RunTime:0.006796s ]
+SQL: SELECT `id`,`name` FROM `wy_role`  [ RunTime:0.004065s ]
+SQL: SHOW COLUMNS FROM `wy_user` [ RunTime:0.006722s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_user` LIMIT 1   [ RunTime:0.017679s ]
+SQL: SELECT * FROM `wy_user` ORDER BY id ASC LIMIT 0,15   [ RunTime:0.000591s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.096228s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002222s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.098551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027234s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.125907s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.126492s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.127038s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.127422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002210s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.128151s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2014-02-04T11:47:27+08:00 ] 127.0.0.1 /index.php?g=System&m=Group&a=index&pid=25&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.005656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005849s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004404s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 25 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001909s ]
+SQL: SHOW COLUMNS FROM `wy_role` [ RunTime:0.006393s ]
+SQL: SELECT * FROM `wy_role` ORDER BY sort DESC  [ RunTime:0.000282s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042854s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001413s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017225s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.061604s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.062128s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.062673s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.063094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002104s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.063789s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2014-02-04T11:47:27+08:00 ] 127.0.0.1 /index.php?g=System&m=User_group&a=index&pid=48&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004737s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 48 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001831s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005432s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_user_group` LIMIT 1   [ RunTime:0.001792s ]
+SQL: SELECT * FROM `wy_user_group` ORDER BY id ASC LIMIT 0,15   [ RunTime:0.000206s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.043407s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001340s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  username D:\weixin\VfanData\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index:  username D:\weixin\VfanData\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index:  username D:\weixin\VfanData\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index:  username D:\weixin\VfanData\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017752s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.062620s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.063134s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.063700s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.064087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002168s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.064870s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2014-02-04T11:47:28+08:00 ] 127.0.0.1 /index.php?g=System&m=Users&a=index&pid=50&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.007420s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 50 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006523s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.007003s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` ORDER BY id desc  [ RunTime:0.000246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_users` LIMIT 1   [ RunTime:0.000123s ]
+SQL: SELECT * FROM `wy_users` ORDER BY id desc LIMIT 0,25   [ RunTime:0.000216s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.049771s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001572s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.051432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020137s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.071625s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.072145s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.072731s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.073118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002166s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.073873s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2014-02-04T11:47:29+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=45&level=2&title=%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004747s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 45 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.003442s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.035838s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000662s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.036575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010942s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.047573s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.048158s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.048763s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.049222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002815s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.050500s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002045s ]
+
+[ 2014-02-04T11:47:30+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=80&level=2&title=%E5%85%AC%E4%BC%97%E5%8F%B7%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.007826s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 80 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001399s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.031434s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000639s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.032144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010609s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.042793s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.043272s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.043763s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.044150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001962s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.044832s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2014-02-04T11:47:31+08:00 ] 127.0.0.1 /index.php?g=System&m=Token&a=index&pid=81&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.021375s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 81 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.002422s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.007917s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` LIMIT 1   [ RunTime:0.000211s ]
+SQL: SELECT * FROM `wy_wxuser` ORDER BY id desc LIMIT 0,5   [ RunTime:0.000303s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\weixin\VfanCms\Lib\Action\System\TokenAction.class.php 第 12 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.065054s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001109s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.066225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016468s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.082752s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.083664s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.084223s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.084612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002520s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.085353s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2014-02-04T11:47:45+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=2&level=2&title=%E7%AB%99%E7%82%B9%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004581s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001806s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.033329s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000668s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013362s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.047486s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.048039s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.048583s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.048987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002195s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.049761s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2014-02-04T11:47:48+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=index&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with that of BaseAction::insert() D:\weixin\VfanCms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004342s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 6 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001885s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006201s ]
+SQL: SELECT * FROM `wy_user_group` ORDER BY id ASC  [ RunTime:0.001917s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.036963s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001130s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\weixin\VfanData\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 48 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.038151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016716s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054919s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055442s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.056012s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002086s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057093s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2014-02-04T11:47:51+08:00 ] 127.0.0.1 /index.php?g=System&m=Node&a=index&pid=11&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004473s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 11 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001788s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.004390s ]
+SQL: SELECT * FROM `wy_node` ORDER BY sort DESC  [ RunTime:0.002847s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.056030s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001057s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.057146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012668s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.069908s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.070869s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.071866s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.072253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003119s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.073137s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2014-02-04T11:47:53+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=index&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with that of BaseAction::insert() D:\weixin\VfanCms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006875s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 6 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.002816s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006956s ]
+SQL: SELECT * FROM `wy_user_group` ORDER BY id ASC  [ RunTime:0.012986s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.061020s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002174s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\weixin\VfanData\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 48 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.063335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019772s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.083099s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.083619s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.084175s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.084945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002490s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.085667s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2014-02-04T11:48:18+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\weixin\VfanCms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.006468s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001126s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\weixin\VfanData\logs\Cache\Home\1c050765058ebc97c122cbb1ab9d8f98.php 第 22 行.
+NOTIC: [8] Undefined index:  uid D:\weixin\VfanData\logs\Cache\Home\1c050765058ebc97c122cbb1ab9d8f98.php 第 22 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.007657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022399s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.030126s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.031707s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.032287s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.032689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003293s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.033602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000847s ]
+

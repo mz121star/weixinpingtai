@@ -1,0 +1,143 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title><?php echo ($tpl['wxname']); ?></title><meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="format-detection" content="telephone=no"><link rel="stylesheet" type="text/css" href="<?php echo RES;?>/css/yuesh/iscroll.css" /><base href="." /><link rel="stylesheet" href="<?php echo RES;?>/css/flash/css/plugmenu.css"><script src="<?php echo RES;?>/css/102/iscroll.js" type="text/javascript"></script><script type="text/javascript">            var myScroll;
+            function loaded() {
+                myScroll = new iScroll('wrapper', {
+                    snap: true,
+                    momentum: false,
+                    hScrollbar: false,
+                    onScrollEnd: function () {
+                        document.querySelector('#indicator > li.active').className = '';
+                        document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+                    }
+                });
+ 
+            }
+            document.addEventListener('DOMContentLoaded', loaded, false);
+        </script><style type="text/css">* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+.wz04_content {
+	background-color: #121313;
+	margin: 0;
+}
+
+.wz04_content a,.wz04_content a£ºhover,.wz04_content a£ºvisited{
+	color:#ffffff;
+}
+
+.content_big_out{
+	width: 33.33%;
+	float: left;
+}
+
+.content_big {
+	background-color: black;
+	padding: 0 1px 1px 0;
+}
+
+.content_big_inner{
+	background-color: #337DC2;
+}
+
+.content_right_none {
+	margin: 0;
+}
+
+.content_big img {
+	width: 100%;
+}
+
+.content_smm_one {
+	text-align:center;
+	padding:10px 10px 5px;
+}
+
+.content_smm_one img{
+	width:60px;
+	height:60px;
+}
+
+.content_smm_two {
+	width: 100%;
+	padding-bottom:5px;
+}
+
+.content_smm_two span {
+	display: block;
+	line-height: 20px;
+	font-size: 16px;
+	width: 100%;
+	text-align: center;
+	color: fffff;
+	height:20px;
+	overflow:hidden;
+}
+
+html,body { /*position:relative;
+	height:100%;*/
+	color: #ffffff;
+	font-family: Microsoft YaHei, Helvitica, Verdana, Tohoma, Arial,
+		san-serif;
+	background-color: #121313;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.clr {
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+html,body {
+	background-color: #ffffff;
+}
+
+.wz13_content {
+	background-color: #ffffff;
+	margin: 0;
+	padding-top:10px;
+}
+
+.wz13_content a,.wz04_content a£ºhover,.wz04_content a£ºvisited{
+	color:#121313;
+}
+
+.content_smm_one img{
+	width:75px;
+	height:75px;
+}
+a{
+	text-decoration:none;
+}
+</style></head><body><div class="banner"><div id="wrapper"><div id="scroller"><ul id="thelist"><?php if(is_array($flash)): $i = 0; $__LIST__ = $flash;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$so): $mod = ($i % 2 );++$i;?><li><p><?php echo ($so["info"]); ?></p><a href="<?php echo ($so["url"]); ?>"><img src="<?php echo ($so["img"]); ?>" /></a></li><?php endforeach; endif; else: echo "" ;endif; ?></ul></div></div><div id="nav"><div id="prev" onclick="myScroll.scrollToPage('prev', 0,400,3);return false">&larr; prev</div><ul id="indicator"><?php if(is_array($flash)): $i = 0; $__LIST__ = $flash;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$so): $mod = ($i % 2 );++$i;?><li   <?php if($i == 1): ?>class="active"<?php endif; ?>  ><?php echo ($i); ?></li><?php endforeach; endif; else: echo "" ;endif; ?></ul><div id="next" onclick="myScroll.scrollToPage('next', 0);return false">next &rarr;</div></div><div class="clr"></div></div><div id="insert1"></div><script>            var count = document.getElementById("thelist").getElementsByTagName("img").length;	
+
+
+            for(i=0;i<count;i++){
+                document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+
+            }
+
+            document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+
+
+            setInterval(function(){
+                myScroll.scrollToPage('next', 0,400,count);
+            },3500 );
+
+            window.onresize = function(){ 
+                for(i=0;i<count;i++){
+                    document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+
+                }
+
+                document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+            } 
+
+	</script><div id="insert2"></div><div style="display:none"></div><div style="display:none"><script language="javascript" type="text/javascript" src=""></script></div><div class="wz13_content"><?php if(is_array($info)): $i = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php if($vo['url'] == ''): echo U('Wap/Index/lists',array('classid'=>$vo['id'],'token'=>$vo['token'])); else: echo ($vo["url"]); endif; ?>"><div class="content_big_out"><div><div><div class="content_smm_one"><img src="<?php echo ($vo["img"]); ?>" /></div><div class="content_smm_two"><span style="font-size: 12px;"><?php echo ($vo["name"]); ?></span></div></div></div></div></a><?php endforeach; endif; else: echo "" ;endif; ?></div><?php if($showPlugMenu): ?><div class="plug-div"><div class="plug-phone"><div class="plug-menu themeStyle" style="background:<?php echo ($homeInfo["plugmenucolor"]); ?>"><span class="close"></span></div><?php if(is_array($plugmenus)): $i = 0; $__LIST__ = $plugmenus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="themeStyle plug-btn plug-btn<?php echo ($i); ?> close" style="background:<?php echo ($homeInfo["plugmenucolor"]); ?>"><a href="<?php echo ($vo["url"]); ?>"><span style="background-image: url(<?php echo RES;?>/css/flash/images/img/<?php echo ($vo["name"]); ?>.png);"></span></a></div><?php endforeach; endif; else: echo "" ;endif; ?><div class="plug-btn plug-btn5 close"></div></div></div><?php endif; ?><script src="<?php echo RES;?>/css/flash/js/zepto.min.js" type="text/javascript"></script><script src="<?php echo RES;?>/css/flash/js/plugmenu.js" type="text/javascript"></script><div class="copyright"><?php if($iscopyright == 1): echo ($homeInfo["copyright"]); else: echo ($siteCopyright); endif; ?></div></body></html>

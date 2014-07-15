@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'uid', 2 => 'token', 3 => 'queryname', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(11)', 'uid' => 'int(11)', 'token' => 'varchar(60)', 'queryname' => 'text', ), ); ?>

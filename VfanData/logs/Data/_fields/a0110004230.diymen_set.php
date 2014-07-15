@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'token', 2 => 'appid', 3 => 'appsecret', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(11)', 'token' => 'varchar(60)', 'appid' => 'varchar(18)', 'appsecret' => 'varchar(32)', ), ); ?>

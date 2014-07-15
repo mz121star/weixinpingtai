@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'openid', 2 => 'enddate', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(11)', 'openid' => 'varchar(60)', 'enddate' => 'int(11)', ), ); ?>

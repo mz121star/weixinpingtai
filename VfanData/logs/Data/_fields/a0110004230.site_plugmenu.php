@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'token', 1 => 'name', 2 => 'url', 3 => 'taxis', 4 => 'display', '_autoinc' => false, '_type' => array ( 'token' => 'varchar(60)', 'name' => 'varchar(20)', 'url' => 'varchar(100)', 'taxis' => 'mediumint(4)', 'display' => 'tinyint(1)', ), ); ?>

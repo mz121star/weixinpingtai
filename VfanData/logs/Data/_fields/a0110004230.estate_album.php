@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'pid', 2 => 'poid', 3 => 'token', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(11)', 'pid' => 'int(11)', 'poid' => 'int(11)', 'token' => 'varchar(50)', ), ); ?>

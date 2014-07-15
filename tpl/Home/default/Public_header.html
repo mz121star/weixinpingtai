@@ -1,0 +1,28 @@
+<div class="header">
+    <div class="header-left">
+        <a href="/" class="logo"><img src="{pigcms::RES}/images/logo-vfancms.png" /> </a>
+        <dl>
+            <dd class="logo-text">最专业的企业微信营销平台</dd>
+            <dd class="tel-whole">全国招商热线：400-XXX-XXXX</dd>
+        </dl>
+    </div>
+<div class="login">
+<if condition="$_SESSION[uid]==false">
+			你好&nbsp;&nbsp;<span class="f_red">游客</span>&nbsp;&nbsp;
+			<a href="{pigcms::U('Index/login')}">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="{pigcms::U('Index/login')}">注册</a>
+			<else/>
+			你好，<a href="/#" hidefocus="true"  ><span style="color:red">{pigcms:$Think.session.uname}</span></a>（uid:{pigcms:$Think.session.uid}）
+			<a href="{pigcms::U('System/Admin/logout')}" >退出</a>
+</if>
+</div>
+    <div class="navbar">
+        <ul>
+            <li> <a href="/">首页 </a></li>
+            <li> <a href="{pigcms::U('Home/Index/about')}">关于我们</a></li>
+            <li> <a href="{pigcms::U('User/Index/index')}">管理中心</a></li>
+            <li> <a href="{pigcms::U('Home/Index/help')}">帮助中心</a></li>
+            <li><a href="http://wpa.qq.com/msgrd?v=3&uin={pigcms::C('site_qq')}&site=qq&menu=yes" target="_blank">在线咨询</a></li>
+        </ul>		
+    </div>
+</div>

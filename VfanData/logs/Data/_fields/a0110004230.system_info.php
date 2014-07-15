@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'lastsqlupdate', 1 => 'version', '_autoinc' => false, '_type' => array ( 'lastsqlupdate' => 'int(10)', 'version' => 'varchar(10)', ), ); ?>

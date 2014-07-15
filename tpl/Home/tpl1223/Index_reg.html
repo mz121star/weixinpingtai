@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>合作代理|{pigcms::C('site_name')}|{pigcms::C('site_title')}</title>
+<include file="Public:header"/>
+<style type="text/css">
+<!--
+.red {color: #FF0000}
+.reg { color:#555555}
+.reg input { 
+	padding: 5px;
+	margin-top:12px;
+	border: solid 1px #E1E1E1;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 150px;
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	}
+.reg input:hover,.reg input:focus{ 
+	border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+.think-reg{ margin-top: 36px;padding-right: 60px; border-right: 1px solid #ddd; }
+.think-reg .body{ padding-top: 12px; }
+.think-reg{ float: left; }
+.think-form{ padding-bottom: 36px; }
+.think-form .submit{ background: #348FD4; color: #fff; font-size: 16px; height: 30px; line-height: 21px; padding: 0 24px; vertical-align: middle; border: 0; cursor: pointer; }
+.think-form .submit:hover{ background-color: #2F81BF; }
+-->
+</style>
+<div class="nav clearfix">
+	<div class="nav-content">
+		<h1 class="left">{pigcms::C('site_name')}·微信营销，如此简单！</h1>
+		<div class="right line-li">
+			<ul>
+				<li>
+					<a href="/">首页</a>
+				</li>
+				<li>
+					<a href="{pigcms::U('Home/Index/common')}">经典案例</a>
+				</li>
+				<li>
+					<a href="{pigcms::U('Home/Index/gongneng')}">功能介绍</a>
+				</li>
+				<li>
+					<a href="{pigcms::U('Home/Index/daili')}">合作代理</a>
+				</li>
+				<li>
+					<a href="http://www.mcxmt.com" target="_blank">更多服务</a>
+				</li>
+			<if condition="$_SESSION[uid]==false">
+				<li><a href="{pigcms::U('Index/login')}">登录</a></li>
+				<li><a href="{pigcms::U('Index/reg')}" class="hover">注册</a></li>
+			<else/><li>
+			<a href="{pigcms::U('User/Index/index')}" hidefocus="true"  ><span style="color:red">管理中心</span></a>
+			<a href="javascript:void(0)" onClick="Javascript:window.open('{pigcms::U('Admin/Admin/logout')}','_self')" >退出</a></li>
+	</if>		
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- banner -->
+<DIV class="Public-content clearfix" style="margin-top:38px;">
+<DIV class=Public>
+<H2 class=Public-h2>用户注册</H2>
+<DIV class=Public-box>
+<DIV class=Proxy>
+<div class="think-reg">
+<DIV class="body think-form ">
+<FORM class=login method=post action=/index.php?m=Users&amp;a=checkreg&amp;b_u=0>
+  <TABLE width="800" height=260 class="reg">
+    <TBODY>
+      <TR>
+        <TH width=109>用户名</TH>
+        <TD width="534" colSpan=2><INPUT name=username 
+      type=text 
+      class=text onBlur="if(this.value==''){this.value='请输入用户名'}" onClick="if(this.value=='请输入用户名'){this.value=''}" onKeyUp="this.value=this.value.replace(/[^a-zA-Z]/g,'')" 
+" value="请输入用户名" maxlength="16" required="">
+            <span class="red">*</span> 只支持英文帐号注册,如：pigcmswx，最大长度12位</TD>
+      </TR>
+      <TR>
+        <TH>密　码</TH>
+        <TD colSpan=2><INPUT name=password type=password class=text maxlength="16">
+            <span class="red">*</span> 请输入6位以上密码，如：123456，最大长度12位</TD>
+      </TR>
+      <TR>
+        <TH>重复密码</TH>
+        <TD colSpan=2><INPUT name=repassword type=password class=text maxlength="16">
+            <span class="red">*</span> 请重复输入密码 </TD>
+      </TR>
+      <TR>
+        <TH>邮　箱</TH>
+        <TD colSpan=2><INPUT onBlur="if(this.value==''){this.value='请输入电子邮箱'}" 
+      class=text onClick="if(this.value=='请输入电子邮箱'){this.value=''}" 
+      value="请输入电子邮箱" type=text name=email>
+            <span class="red">* 重要!</span>请认真填写邮箱，方便日后找回密码 </TD>
+      </TR>
+      <TR>
+        <TH>&nbsp;</TH>
+        <TD colSpan=2><INPUT name="submit" type=submit class=submit value=注册本站会员>        </TD>
+      </TR>
+      <TR>
+        <TH height="50">&nbsp;</TH>
+        <TD colSpan=2>客服QQ：987954047</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+</FORM>
+</div>
+</DIV></DIV>
+</DIV></DIV>
+<include file="Public:footer"/>
+</body></html>

@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'token', 1 => 'name', 2 => 'pid', 3 => 'key', 4 => 'open', '_autoinc' => false, '_type' => array ( 'token' => 'varchar(60)', 'name' => 'varchar(40)', 'pid' => 'varchar(40)', 'key' => 'varchar(60)', 'open' => 'tinyint(1)', ), ); ?>

@@ -1,0 +1,60 @@
+﻿<include file="Index:header"/>
+<div class="content">
+<div class="usercontent">
+<ul>
+<li><a href="" class="gold" title="查看资金" ><p><strong>账户资金总数：</strong>{pigcms:$thisUser.money}</p><p>已消费资金数：{pigcms:$thisUser.spend}</p></a></li>
+<li class="addli"><a class="addwx" title="添加微信公众号" onclick="location.href='{pigcms::U('Index/add')}';">添加微信公众号</a></li>
+<li><a href="index.php?g=User&m=Alipay&a=index" title="支付宝在线充值" class="goldbuy">支付宝在线充值</a></li>
+<li><div class="qqqun"><div class="qt">309399799 </div><div class="qt2">官方企业QQ号</div></div></li>
+</ul>
+        <div class="clr"></div>
+      </div>
+          <div class="msgWrap">
+            <TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR>
+                  <TH>公众号名称</TH>
+                  <TH>VIP等级</TH>
+                  <TH>创建时间/到期时间</TH>
+                   <TH>已定义/上限</TH>
+                   <TH>请求数</TH>
+                  <TH>操作</TH>
+                </TR>
+              </THEAD>
+              <TBODY>
+                <TR></TR>                
+                 <volist name="info" id="vo"> 
+					<TR>
+					  <TD><p><a href="{pigcms::U('Function/index')}" title="点击进入功能管理"><img src="{pigcms:$vo.headerpic}" width="40" height="40"></a></p><p>{pigcms:$vo.wxname}</p></TD>
+					  <TD align="center"><php>if($_SESSION['gid']>1){echo $_SESSION['gid']-1;}else{echo 0;}</php></TD>
+					  <TD><p>创建时间:{pigcms:$vo.createtime|date="Y-m-d",###}</p><p>到期时间:{pigcms:$viptime|date="Y-m-d",###}</p><p><a   href="{pigcms::U('Alipay/index')}" id="smemberss" class="green"><em>升降级vip续费</em></a></p></Td>
+					  <TD><p>图文：<php>echo $_SESSION['diynum'].'/'.$group[$_SESSION['gid']]['did'];</php></p></TD>
+					   <TD><p>总请求数:<php>echo $_SESSION['connectnum']</php></p><p> 本月请求数:<php>echo $group[$_SESSION['gid']]['cid'];</php></p></TD>
+					  
+					  <TD class="norightborder">　<a href="{pigcms::U('Index/edit',array('id'=>$vo['id']))}">编辑</a>　<a  href="{pigcms::U('Index/del',array('id'=>$vo['id']))};">删除</a>　
+					  <a href="{pigcms::U('Function/index',array('id'=>$vo['id'],'token'=>$vo['token']))}" class="btnGreens" >功能管理</a>
+					  <a href="{pigcms::U('Home/Index/help',array('id'=>$vo['id'],'token'=>$vo['token']))}" class="btnGreens" >API接口</a>
+					  </TD>
+					</TR>
+                  </volist>
+
+              </TBODY>
+            </TABLE>
+            
+          </div>
+          
+          <div class="cLine">
+            <div class="pageNavigator right">
+              <div class="pages"></div>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+        
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <!--底部-->
+  	</div>
+<include file="Public:footer"/>	

@@ -1,0 +1,97 @@
+<include file="Public:head"/>  
+ <link rel="stylesheet" href="{pigcms::RES}/css/diymen/tipswindown.css" type="text/css" media="all" />
+<script type="text/javascript" src="{pigcms::RES}/css/diymen/tipswindown.js"></script> 
+
+<script type="text/javascript">
+ $(document).ready(function() {
+	
+	$("#iframe1").click(function(){
+		tipsWindown("添加菜单","iframe:{pigcms::C('site_url')}{pigcms::U('Diymen/class_add')}","460","330","true","","true","leotheme");
+	});
+ });
+ </script>
+
+<div class="content">
+
+<div class="cLineB">
+  <h4><span class=""><h1>注意：必须先填写【AppId】【 AppSecret】！!</h1></span></h4>
+			  <button style="margin-top:-27px" class="ajax right btnGreen cboxElement" id="iframe1" title="添加主菜单">添加菜单</button>
+ </div>
+ <div class="cLineD">
+ 	<form enctype="multipart/form-data" action="" method="post"> 
+    AppId:<input type="text" size="20" tabindex="1" class="px" value="{pigcms:$diymen.appid}" id="appid" name="appid">　 
+	AppSecret: <input type="text" size="20" tabindex="1" class="px" value="{pigcms:$diymen.appsecret}" id="appsecret" name="appsecret">
+	<button class=" btnGrayS vm" value="true" name="appidsubmit" type="submit"><strong>保存</strong></button>
+	<br><span style="color:red">通过认证服务号才能得到这2个值!</span>
+</form>
+         </div>
+         
+ <div class="msgWrap form">
+       <form enctype="multipart/form-data" action="" method="post"><input type="hidden" value="" name="anchor">
+       
+		没内容      	  
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="ListProduct"> 
+<thead>
+<tr>
+	<th style=" width:60px;">显示顺序</th>
+	<th style=" width:220px;">主菜单名称</th>
+	<th style=" width:170px;">关联关键词</th>
+	<th>外链URL</th>
+	<th class="norightborder" style=" width:160px;">操作</th>
+</tr>
+</thead>
+   <tbody>
+  	<volist id="class" name="class">
+	<tr class="hover">
+        <td class="td25">
+			<span>{pigcms:$class.sort}</span>
+		</td>
+        <td>
+          <div>
+			<span>{pigcms:$class.title}</span>
+          </div>
+        </td>
+        <td><span>{pigcms:$class.keyword}</span></td>
+        <td><span><if condition="$class['url'] eq false">无链接地址<else/>{pigcms:$class.url}</if></span></td>
+        <td>
+			<a class="ajax btnGreen  cboxElement" href='' title="修改主菜单">修改</a>
+			<a class=" btnGreen " href="">删除</a>
+		</td>				
+      </tr>
+	  
+	</volist>
+	<tr class="hover">
+        <td class="td25" colspan="5">
+		<if condition="$class neq false">
+		<a class="btnGreen " onclick="drop_confirm('请确认要刷新数据吗!', '{pigcms::U('Wechat_group/class_send')}');" title="">更新分组列表</a>
+		</if>
+		<span style="float:left;" id="cdul">
+		<style>
+			#cdul{
+				float:left;
+				color:red;
+			}
+		</style>
+		注：<br>
+		(使用前提是已经拥有了自定义菜单的用户才能够使用，)<br>
+		第一步:必须先填写【AppId】【 AppSecret】！<br>
+		第二步:更新分组列表<br>
+		官方说明：如果你是第一次使用这个功能必须完成以上两步！<br>
+		</span>
+		</td>				
+      </tr>
+	      	  
+    </tbody>
+</table>
+</form>
+       <p>
+
+       </p>
+       <div class="clear"></div>
+      </div>
+  </div>
+         </div>
+        </dd>
+</dl>
+<include file="Public:footer"/>  
+ 

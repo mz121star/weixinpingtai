@@ -1,0 +1,98 @@
+<include file="Public:head"/>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<div class="content">
+
+<div class="cLineB">
+  <h4>上传图片</h4><a href="javascript:history.go(-1);" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+  
+ </div>
+ 
+ <div class="cLineB">
+<div class="pageNavigator left"><strong>此相册地址：<a href="{pigcms::C('site_url')}/index.php?g=Wap&m=Photo&a=plist&token={pigcms:$token}&id={pigcms:$Think.get.id}" class="green">{pigcms::C('site_url')}/index.php?g=Wap&m=Photo&a=plist&token={pigcms:$token}&id={pigcms:$Think.get.id}</a></strong></div>
+<div class="clr"></div>
+</div>
+ <div class="msgWrap form">
+           
+   <input type="hidden" name="formhash" value="7566c850">
+   <input type="hidden" name="wxid" value="gh_423dwjkewad">
+<div class="bdrcontent">
+<div id="div_ptype">
+<table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+<form action="" method="post">
+<thead>
+	<tr>
+		<th style=" width:120px;">名称</th>                   
+		<th style=" width:70px;">显示顺序</th>
+		<th>图片外链地址（宽720够了，高不限制）</th>
+		<th>图片简单说明（可不填）</th>
+		<th style=" width:80px;">显示</th>
+		<th style=" width:100px;" class="norightborder">操作</th>
+	</tr>
+</thead>  
+<tr>
+	<td><input type="text" name="title" value=""  class="px"/></td>
+	<td><input type="text" name="sort" value="0"  class="px" style="width:50px;" /></td>
+	<td>
+		<div class="cateimg"></div>
+		<input class="px" style="width:250px;" type="text" name="picurl" id="picurl" value=""  /> <script src="/tpl/static/upyun.js"></script><a href="###" onclick="upyunPicUpload('picurl',1500,1000,'{pigcms:$token}')" class="a_upload">上传</a> <a href="###" onclick="viewImg('picurl')">预览</a>
+		<input type="hidden"   name="pid" value="{pigcms:$Think.get.id}"  />
+	</td>
+	<td><input class="px" type="text"  style="width:250px;"  name="info" value=""  /></td>
+	<td><input class="checkbox" type="checkbox" name="status" value="1"  checked ></td>
+	<td class="norightborder">
+		<button type="submit" id="vtype" class="btnGray vm" ><strong>添加</strong></button>　
+	</td>
+</tr> 
+</form>
+
+
+ <tr>
+	<td colspan="6"><div class="cLineB">
+  <h4>图片列表</h4>  
+ </div></td>
+ </tr>
+ <thead>
+ 
+<tr>
+<th style=" width:120px;">名称</th>
+                   
+<th style=" width:70px;">显示顺序</th>
+<th>图片外链地址</th>
+                        <th>图片简单说明（可不填）</th>
+<th style=" width:80px;">显示</th>
+                        <th style=" width:100px;" class="norightborder">操作</th>
+</tr>
+</thead> 
+<volist name="photo" id="photo">
+ <form method="post" action="{pigcms::U('Photo/list_edit',array('token'=>session('token')))}">              
+<tr>
+	<td><input type="text" name="title" value="{pigcms:$photo.title}"  class="px"    /></td>
+	<td><input type="text" name="sort" value="{pigcms:$photo.sort}"  class="px" style="width:50px;" /></td>
+	<td><div class="cateimg"></div><input class="px"  style="width:250px;"   type="text"   name="picurl" id="picurl{pigcms:$i}" value="{pigcms:$photo.picurl}"  /> <script src="/tpl/static/upyun.js"></script><a href="###" onclick="upyunPicUpload('picurl{pigcms:$i}',1500,1000,'{pigcms:$token}')" class="a_upload">上传</a> <a href="###" onclick="viewImg('picurl{pigcms:$i}')">预览</a></td>
+	<td><input class="px" type="text"  style="width:250px;"  name="info" value="{pigcms:$photo.info}"  /></td>
+	<td>
+		<input class="checkbox" type="checkbox" name="status" value="1"  <if condition="$list['status'] eq 1">checked</if> >
+		<input type="hidden"   name="id" value="{pigcms:$photo.id}"  /></td>
+	<td class="norightborder">
+		<button type="submit" name="edit" value="true" class="btnGreen vm" style="height:20px;font-size:12px;line-height:10px;">
+			<strong>修改</strong>
+		</button>
+	<a href="{pigcms::U('Photo/list_del',array('id'=>$photo['id'],'token'=>session('token')))}">删除</a>
+	</td>
+</tr>
+</form>
+</volist>
+  </table>
+</div>
+</div>
+<div class="footactions" style="padding-left:10px">
+  <div class="pages"></div>
+</div>
+
+
+ </div>
+  
+        </div>
+<include file="Public:footer"/>  
+ 
