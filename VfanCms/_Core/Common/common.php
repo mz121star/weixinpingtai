@@ -102,12 +102,12 @@ function require_cache($filename) {
     if (!isset($_importFiles[$filename])) {
         if (file_exists_case($filename)) {
         	
-            require $filename;echo 22;exit;
+            require $filename;
             $_importFiles[$filename] = true;
         } else {
             $_importFiles[$filename] = false;
         }
-    }
+    }echo 343;exit;
     return $_importFiles[$filename];
 }
 
