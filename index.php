@@ -17,5 +17,7 @@ define('TMPL_PATH','./tpl/');
 define('HTML_PATH','./VfanData/html/');
 define('APP_PATH','./VfanCms/');
 define('CORE','./VfanCms/_Core');
+echo "hello";
+exit;
 require(CORE.'/VfanCms.php');
 ?>
